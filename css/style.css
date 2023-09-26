@@ -176,12 +176,32 @@ body{
     padding-bottom: 5px;
 }
 
+#side-menu .svg-container > img{
+    height: 1.2em;
+    padding-right: 7px;
+}
+
+
 #side-playlist{
     padding-top: 20px;
 }
 
 #side-playlist-create{
     margin: 20px 0;
+}
+
+#plus{
+    font-size: 2em;
+    color: var(--color-black);
+    background-color: var(--color-light-grey);
+
+    width: 40px;
+    height: 40px;
+
+    /* centering */
+    line-height: 40px;
+    text-align: center;
+    margin-right: 10px;
 }
 
 .side-playlist-items{
@@ -281,6 +301,7 @@ body{
 .img-container {
     width: 100%;
 }
+
 
 img{
     width: 100%;
