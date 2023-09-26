@@ -11,6 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&family=Inclusive+Sans&family=Montserrat:wght@500&family=Noto+Sans+Symbols:wght@400;600&family=Oswald:wght@200&family=PT+Sans:wght@400;700&family=Space+Grotesk:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Spotify Web</title>
   </head>
   <body>
@@ -187,7 +194,46 @@
           <div id="playing-title" class="play-mar">Sinister</div>
           <div id="playing-author" class="play-mar">Brano nome</div>
         </div>
-        <div id="playing-svg">O O</div>
+        <div id="playing-svg" class="flex">
+          <div class="svg-container">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          <div class="svg-container">
+            <i class="fa-regular fa-folder"></i>
+          </div>
+        </div>
+      </div>
+
+      <div id="play-console" class="flex fl-column justify-center align-center">
+        <div id="console-top" class="flex fl-row justify-center">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="fa-regular fa-circle-play"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+        <div
+          id="console-bottom"
+          class="flex fl-row justify-between align-center"
+        >
+          <div class="console-time">0.25</div>
+          <div id="progress-time" class="progress-bar">
+            <div class="progress-filler"></div>
+          </div>
+          <div class="console-time">4.25</div>
+        </div>
+      </div>
+
+      <div
+        id="playbar-setting"
+        class="flex fl-row align-center justify-between"
+      >
+        <i class="fa-solid fa-list-ul"></i>
+        <i class="fa-solid fa-desktop"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <div id="progress-volume" class="progress-bar">
+          <div class="progress-filler"></div>
+        </div>
       </div>
     </div>
   </body>

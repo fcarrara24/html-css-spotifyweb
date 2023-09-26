@@ -80,7 +80,7 @@ body{
 }
 .play-mar{
     margin-left: 5px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 .btn{
@@ -242,6 +242,22 @@ body{
     color: var(--color-grey);
 }
 
+.progress-bar{
+    
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-grey);
+    
+    
+}
+
+.progress-filler{
+    width: 40%;
+    height: 100%;
+    background-color: var(--color-white);
+    overflow: hidden;
+}
+
 /* cards (album) */
 .album{
     width: calc(100% / 6);
@@ -280,18 +296,58 @@ img{
 #playing-img{
     width: calc(var(--playbar-height) / 1.5);
     height: calc(var(--playbar-height) / 1.5);
+
+}
+
+#playing-title{
+    color: var(--color-white);
+}
+
+#playing-author{
+    font-size: 0.7em;
+}
+
+#playing-svg{
+    
+    flex-direction: row;
+}
+
+#playing-svg .svg-container{
+    padding-right: 10px;
+}
+
+i{
+    color: var(--color-grey);
+}
+
+#console-top i{
+    padding: 10px;
+    color: var(--color-white);
+    font-size: 1.2em;
+}
+
+.console-time{
+    padding: 0 15px;
 }
 
 
+#progress-time{
+    width: 300px;
+}
 
+#playbar-settings{
+    width: var(--side-width);
+}
 
+#playbar-setting i{
+    color: var(--color-white);
+    padding: 0 5px;
+}
 
-
-
-
-
-
-
+#progress-volume{
+    width: 150px;
+    margin: 0 5px;
+}
 
 
 
