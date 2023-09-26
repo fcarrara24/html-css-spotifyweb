@@ -47,6 +47,10 @@ body{
     z-index: 1000;
 }
 
+.bar-mar-left{
+    margin-left: 10px;
+}
+
 /* code */
 
 #topbar{
@@ -72,7 +76,8 @@ body{
     width: var(--side-width);
     height: calc(100vh - var(--playbar-height));
 
-    background-color: blue;
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 #right-content{
@@ -81,4 +86,40 @@ body{
     padding-top: var(--topbar-height);
     
     background-color: yellow;
+}
+
+/* sidebar */
+#logo{
+    width: auto;
+    height: var(--topbar-height);
+    position: relative;
+}
+
+#logo > .svg-container{
+    width: 70%;
+    height: auto;
+    /* centered */
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.side-playlist-title{
+    font-style: italic;
+}
+
+.side-choise{
+    padding-bottom: 5px;
+}
+
+#side-playlist{
+    padding-top: 20px;
+}
+
+#side-playlist-create{
+    margin: 20px 0;
+}
+
+.side-playlist-items{
+    padding: 5px 0;
 }
