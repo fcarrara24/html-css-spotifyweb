@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--color-dark-color: #141922;
+	--color-dark-grey: #282828;
+	--color-black: #000000;
+	--color-white: #FFFFFF;
+	--color-grey: #717171;
+	--color-light-grey: #C1C1C1;
+	--color-highlight: #ADFF2F;
+
+    ---playbar-height: 90px;
+    --side-width: 250px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
