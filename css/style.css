@@ -95,7 +95,11 @@ body{
 
     top: 0;
     left: var(--side-width);
-    background-color: var(--color-dark-color);
+    /* converting dark color in rgb so i can edit rgbA
+        hex 14 19 22 => dec 20 25 34
+        opacity 80%  => rgba ~ ~ ~ 0.8
+    */
+    background-color: rgba(20, 25, 34, 0.8);
     flex-direction: row-reverse;
 }
 
@@ -115,6 +119,7 @@ body{
 
     background-color: var(--color-black);
     color: var(--color-grey);
+    overflow-y: auto;
 }
 
 #right-content{
@@ -123,6 +128,7 @@ body{
     padding-top: var(--topbar-height);
     
     background-color: var(--color-dark-grey);
+    overflow-y: scroll;
 }
 
 /* sidebar */
