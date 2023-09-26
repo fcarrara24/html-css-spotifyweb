@@ -14,31 +14,41 @@
     <title>Spotify Web</title>
   </head>
   <body>
-    <div id="topbar" class="fixed bar-index debug">topbar</div>
+    <div id="topbar" class="fixed bar-index debug flex fl-row">
+      <div id="upgrade-button" class="btn vertical-centered">
+        EFFETTUA L'UPGRADE
+      </div>
+    </div>
     <div id="content" class="flex fl-row">
-      <div id="sidebar" class="debug">
-        <div id="logo">
-          <div class="svg-container bar-mar-left">
-            <img src="img/logo.svg" alt="Spotify" />
+      <div id="sidebar" class="flex fl-column justify-between debug">
+        <div class="side-section">
+          <div id="logo">
+            <div class="svg-container bar-mar">
+              <img src="img/logo.svg" alt="Spotify" />
+            </div>
+          </div>
+          <div id="side-menu" class="bar-mar">
+            <div class="side-choise">Home</div>
+            <div class="side-choise">Cerca</div>
+            <div class="side-choise">La Tua Libreria</div>
+          </div>
+          <div id="side-playlist" class="bar-mar">
+            <h4 id="side-playlist-title">PLAYLIST</h4>
+            <div id="side-playlist-create">Crea Playlist</div>
+            <ul id="side-playlist-list">
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+              <li class="side-playlist-items">Lorem, ipsum.</li>
+            </ul>
           </div>
         </div>
-        <div id="side-menu" class="bar-mar-left">
-          <div class="side-choise">Home</div>
-          <div class="side-choise">Cerca</div>
-          <div class="side-choise">La Tua Libreria</div>
-        </div>
-        <div id="side-playlist" class="bar-mar-left">
-          <h4 id="side-playlist-title">PLAYLIST</h4>
-          <div id="side-playlist-create">Crea Playlist</div>
-          <ul id="side-playlist-list">
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-            <li class="side-playlist-items">Lorem, ipsum.</li>
-          </ul>
+        <div class="side-section bar-mar">
+          <div id="side-installer">Installa app</div>
+          <div id="side-user">John Doe</div>
         </div>
       </div>
       <div id="right-content" class="debug">right-content</div>
