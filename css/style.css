@@ -13,10 +13,72 @@
 	--color-light-grey: #C1C1C1;
 	--color-highlight: #ADFF2F;
 
-    ---playbar-height: 90px;
+    --topbar-height: 90px;
+    --playbar-height: 90px;
     --side-width: 250px;
 }
 
 body{
     font-family: 'Montserrat', sans-serif;
+}
+
+/* utilities */
+
+.debug{
+    border: 1px solid black;
+    background-color: red;
+}
+
+.fixed{
+    position: fixed;
+
+}
+
+.flex{
+    display: flex;
+}
+
+.fl-row{
+    flex-direction: row;
+    
+}
+
+.bar-index{
+    z-index: 1000;
+}
+
+/* code */
+
+#topbar{
+    width: calc(100% - var(--side-width));
+    height: var(--topbar-height);
+
+    top: 0;
+    left: var(--side-width);
+    background-color: green;
+}
+
+#playbar{
+    width: 100%;
+    height: var(--playbar-height);
+    
+    bottom: 0;
+    left: 0;
+
+    background-color: green;
+}
+
+#sidebar{
+    width: var(--side-width);
+    height: calc(100vh - var(--playbar-height));
+
+    background-color: blue;
+}
+
+#right-content{
+    width: calc(100% - var(--side-width));
+    height: calc(100vh - var(--playbar-height));
+    padding-top: var(--topbar-height);
+    
+    background-color: yellow;
 }
