@@ -395,7 +395,7 @@ img{
 
 /* playbar */
 #play-album{
-    width: var(--side-width);
+    min-width: 200px;
     padding: 0 10px ;
 }
 
@@ -432,6 +432,10 @@ i{
     padding: 10px;
     color: var(--color-white);
     font-size: 1.2em;
+}
+
+#console-bottom, #console-top{
+    max-width: 100%;
 }
 
 .console-time{
@@ -516,6 +520,14 @@ i{
 
     .album{
         min-width: calc(100% / 2);
+    }
+
+    #play-console{
+        min-width: calc(100% - 200px);
+        padding-right: 10px;
+    }
+    #console-bottom{
+        max-width: 100%;
     }
     
 }
