@@ -179,7 +179,8 @@ a{
 
 #logo-small{
     width: 20px;
-    margin: calc(var(--topbar-height) / 2 - 10px) 10px;
+    margin:  10px;
+    padding-bottom: 20px;
 }
 
 #logo > .svg-container{
@@ -468,10 +469,6 @@ i{
 }
 
 
-
-
-
-
 @media screen and (max-width: 768px){
     
     .main-section-content{
@@ -497,6 +494,9 @@ i{
         display: none;
     }
 
+    #logo{
+        height: 40px;
+    }
     .fa-circle-down{
         transform: translate(calc(50% - 2px), 0);
     }
