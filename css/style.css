@@ -255,12 +255,13 @@ a{
 /* topbar */
 
 #upgrade-button{
-    max-width: 50%;
-    font-size: 1.5em;
+    max-width: 75%;
+    font-size: auto;
     padding: 5px 30px;
     justify-self: end;
     border: 1px solid var(--color-white);
     border-radius: 2em;
+    margin-right: 20px;
 }
 
 /* right-content */
@@ -464,13 +465,21 @@ i{
     #main-nav{
         flex-wrap: wrap;
     }
-
+    #play-album, #play-console, #playbar-setting{
+        max-width: 33%;
+        flex-shrink: 2;
+    }
     
 }
 
 
 @media screen and (max-width: 768px){
-    
+    #playbar{
+        flex-wrap: nowrap;
+    }
+    #playing-svg{
+        flex-direction: column;
+    }
     .main-section-content{
         flex-wrap: wrap;
     }
