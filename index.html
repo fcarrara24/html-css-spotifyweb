@@ -30,7 +30,12 @@
       <div id="sidebar" class="flex fl-column justify-between">
         <div class="side-section">
           <div id="logo">
-            <div class="svg-container bar-mar">
+            <div id="logo-small" class="mobile-visible-inline-block">
+              <div class="svg-container">
+                <img src="img/logo-small.svg" alt="logo small" />
+              </div>
+            </div>
+            <div class="svg-container bar-mar mobile-hidden">
               <img src="img/logo.svg" alt="Spotify" />
             </div>
           </div>
@@ -39,22 +44,24 @@
               <div class="svg-container">
                 <img src="img/home.svg" alt="home" />
               </div>
-              <div class="side-choise-wrapper">Home</div>
+              <div class="side-choise-wrapper mobile-hidden">Home</div>
             </div>
             <div class="side-choise flex fl-row align-center">
               <div class="svg-container">
                 <img src="img/search.svg" alt="home" />
               </div>
-              <div class="side-choise-wrapper">Cerca</div>
+              <div class="side-choise-wrapper mobile-hidden">Cerca</div>
             </div>
             <div class="side-choise flex fl-row align-center">
               <div class="svg-container">
                 <img src="img/libreria.svg" alt="home" />
               </div>
-              <div class="side-choise-wrapper">La Tua Libreria</div>
+              <div class="side-choise-wrapper mobile-hidden">
+                La Tua Libreria
+              </div>
             </div>
           </div>
-          <div id="side-playlist" class="bar-mar">
+          <div id="side-playlist " class="bar-mar mobile-hidden">
             <h4 id="side-playlist-title">PLAYLIST</h4>
             <div id="side-playlist-create" class="flex fl-row align-center">
               <div id="plus">+</div>
@@ -72,8 +79,16 @@
           </div>
         </div>
         <div class="side-section bar-mar">
-          <div id="side-installer">Installa app</div>
-          <div id="side-user">John Doe</div>
+          <div id="side-installer" class="flex fl-row">
+            <i class="fa-regular fa-circle-down"></i>
+            <div class="mobile-hidden">&nbsp;Installa app</div>
+          </div>
+          <div id="side-user" class="flex fl-row align-center">
+            <div class="svg-container">
+              <img src="img/profile.svg" alt="profile" />
+            </div>
+            <div class="mobile-hidden">&nbsp;John Doe</div>
+          </div>
         </div>
       </div>
       <div id="right-content" class="">
@@ -89,7 +104,13 @@
           <div class="main-section-title">Recently Played</div>
           <div class="main-section-content flex fl-row justify-start">
             <div class="album">
-              <div class="img-container">
+              <div class="img-container relative">
+                <!-- overlay jjjjjjjjjj -->
+                <div class="album-overlay">
+                  <div class="album-overlay-content">
+                    <i class="fa-solid fa-play-circle"></i>
+                  </div>
+                </div>
                 <img src="img/split.jpeg" alt="split" />
               </div>
               <div class="album-description txt-centered">
