@@ -495,6 +495,7 @@ img{
 
 #playing-author{
     font-size: 0.7em;
+    text-wrap: nowrap;
 }
 
 #playing-author:hover{
@@ -527,7 +528,7 @@ i{
 }
 
 #console-top i:hover{
-    font-size: 1.5em;
+    transform: scale(1.5);
 }
 
 #console-bottom, #console-top{
@@ -553,7 +554,7 @@ i{
 }
 
 #playbar-setting i:hover{
-    font-size: 1.5em;
+    transform: scale(1.5);
 }
 
 #progress-volume{
@@ -630,4 +631,29 @@ i{
         max-width: 100%;
     }
     
+}
+
+@media screen and (max-width: 400px){
+    #play-album{
+        display: none;
+    }
+
+    #play-console{
+        min-width: 100%;
+        
+        justify-self: center;
+    }
+
+    .album{
+        width: 100%;
+    }
+
+    #topbar{
+        justify-content: center;
+    }
+
+    #upgrade-button{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
