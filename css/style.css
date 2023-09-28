@@ -176,7 +176,7 @@ a {
 
     background-color: var(--color-black);
     color: var(--color-grey);
-    overflow-y: auto;
+    
 }
 
 #right-content{
@@ -189,6 +189,16 @@ a {
 }
 
 /* sidebar */
+.side-section:nth-child(1){
+    flex-grow: 1;
+    min-height: calc(100% - (2 * var(--topbar-height)));
+    overflow-y: hidden;
+}
+
+.side-section:nth-child(2){
+    height: var(--topbar-height);
+}
+
 #logo{
     width: auto;
     height: var(--topbar-height);
@@ -211,8 +221,14 @@ a {
 }
 
 #side-playlist-title{
+    height: 20px;
     color: var(--color-white);
     font-style: bold;
+}
+
+#side-playlist-list{
+    height: calc(100% - (20px + 40px + 40px));
+    overflow-y: auto;
 }
 
 .side-choise-wrapper:hover{
@@ -223,6 +239,11 @@ a {
     padding-bottom: 5px;
 }
 
+#side-menu{
+    height: 90px;
+    padding: 5px 0;
+}
+
 #side-menu .svg-container > img{
     height: 1.2em;
     padding-right: 7px;
@@ -231,7 +252,9 @@ a {
 
 
 #side-playlist{
+    
     padding-top: 20px;
+    height: calc(100% - (var(--topbar-height) + 100px));
 }
 
 #side-playlist-create{
@@ -265,6 +288,7 @@ a {
 }
 
 #side-installer{
+    padding-top: 10px;
     padding-bottom: 5px;
     border-bottom: 1px solid var(--color-grey);
 }
