@@ -22,8 +22,25 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/* scrollbar */
+::-webkit-scrollbar {
+    margin-right: 20px;
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
 
 /* utilities */
+
 
 
 
