@@ -523,33 +523,13 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.album:hover .album-overlay{
+.album:hover{
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1.5s;
-    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.album-overlay-content > i{
-    font-size: 4em;
-    color: var(--color-white);
-}
 
-.album-description{
-    padding: 5px;
-}
-
-.album-title{
-    font-weight: bolder;
-    margin: 10px 0;
-}
-
-.album-author{
-    color: var(--color-grey);
-}
-
-.album img{
-    display: block;
-}
 
 .img-container {
     width: 100%;
@@ -695,7 +675,7 @@ i{
     #topbar{
         display: none;
     }
-
+    
     .side-section:nth-child(1){
         display: flex;
         flex-direction: column;
@@ -712,6 +692,15 @@ i{
 
 
 @media screen and (max-width: 1100px){
+    .outer-album{
+        width: calc(100% / 3);
+        min-height: calc((100vw - 250px)/3);
+        
+    }
+    .outer-album h2{
+        font-size: 1em;
+    }
+
     #main-nav{
         flex-wrap: wrap;
     }
@@ -719,11 +708,32 @@ i{
         max-width: 33%;
         flex-shrink: 2;
     }
+    .main-faq{
+        justify-content: space-around;
+        
+        border: 0;
+    }
+    .tablet-hidden{
+        display: none;
+    }
+    .faq-outer {
+        width: 100%;
+        padding: 1px;
+        font-size: 0.7em;
+    }
     
 }
 
 
 @media screen and (max-width: 768px){
+    .outer-album{
+        width: 50%;
+        min-height: calc((100vw - 250px)/2);
+        
+    }
+    .outer-album h2{
+        font-size: 1em;
+    }
     #playbar{
         flex-wrap: nowrap;
     }
@@ -738,11 +748,18 @@ i{
     .album{
         min-width: calc(100% / 4);
     }
-    
+    .main-faq{
+        display: none;
+    }
     
 }
 
 @media screen and (max-width: 576px) {
+    .outer-album{
+        width: 100%;
+        min-height: calc(100vw - 50px);
+        
+    }
     :root{
         --side-width: 50px;
     }
