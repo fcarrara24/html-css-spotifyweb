@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="search.css" />
     <!-- style -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,7 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Spotify Web</title>
+    <title>Search</title>
   </head>
   <body>
     <div id="topbar" class="fixed bar-index flex fl-row">
@@ -30,69 +30,81 @@
     <div id="content" class="flex fl-row">
       <div id="sidebar" class="flex fl-column justify-between">
         <div class="side-section">
-          <div id="logo">
-            <div id="logo-small" class="mobile-visible-inline-block">
+          <div href="../index.html" id="logo">
+            <div
+              href="../index.html"
+              id="logo-small"
+              class="mobile-visible-inline-block"
+            >
               <div class="svg-container">
-                <img src="img/logo-small.svg" alt="logo small" />
+                <img src="../img/logo-small.svg" alt="logo small" />
               </div>
             </div>
             <div class="svg-container bar-mar mobile-hidden">
-              <img src="img/logo.svg" alt="Spotify" />
+              <img src="../img/logo.svg" alt="Spotify" />
             </div>
           </div>
           <div id="side-menu">
+            <a
+              href="../index.html"
+              class="side-choise flex fl-row align-center"
+            >
+              <div class="svg-container bar-mar">
+                <img src="../img/home.svg" alt="home" />
+              </div>
+              <div class="side-choise-wrapper mobile-hidden">Home</div>
+            </a>
             <div class="side-choise flex fl-row align-center">
               <div class="sidegreen"></div>
               <div class="svg-container">
-                <img src="img/home.svg" alt="home" />
-              </div>
-              <div class="side-choise-wrapper mobile-hidden">Home</div>
-            </div>
-            <a
-              href="search/search.html"
-              class="side-choise flex fl-row align-center bar-mar"
-            >
-              <div class="svg-container">
-                <img src="img/search.svg" alt="search" />
+                <img src="../img/search.svg" alt="search" />
               </div>
               <div class="side-choise-wrapper mobile-hidden">Cerca</div>
-            </a>
+            </div>
             <div class="side-choise flex fl-row align-center bar-mar">
               <div class="svg-container">
-                <img src="img/libreria.svg" alt="home" />
+                <img src="../img/libreria.svg" alt="shelf" />
               </div>
               <div class="side-choise-wrapper mobile-hidden">
                 La Tua Libreria
               </div>
             </div>
           </div>
-          <div id="side-playlist" class="bar-mar mobile-hidden">
-            <h4 id="side-playlist-title">PLAYLIST</h4>
-            <div id="side-playlist-create" class="flex fl-row align-center">
-              <div id="plus">+</div>
+          <div class="side-playlist bar-mar mobile-hidden">
+            <h4 class="side-playlist-title">PLAYLIST</h4>
+            <div class="side-playlist-create flex fl-row align-center">
+              <div class="plus">+</div>
               Crea Playlist
             </div>
-            <ul id="side-playlist-list">
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-              <li class="side-playlist-items"><a href="#">Nome Playlist</a></li>
-            </ul>
+
+            <h4 class="side-playlist-title">PODCAST</h4>
+            <div class="side-playlist-create flex fl-row align-center">
+              <div class="plus">+</div>
+              Crea Podcast
+            </div>
           </div>
         </div>
         <div class="side-section bar-mar">
-          <div id="side-installer" class="flex fl-row">
-            <i class="fa-regular fa-circle-down"></i>
-            <div class="mobile-hidden">&nbsp;Installa app</div>
-          </div>
-          <div id="side-user" class="flex fl-row align-center">
+          <ul id="side-installer" class="flex fl-row mobile-hidden txt-wrap">
+            <li class="sidebar-options"><a href="#"></a>Informazioni legali</li>
+            <li class="sidebar-options">
+              <a href="#"></a>Centro sulla privacy
+            </li>
+            <li class="sidebar-options">
+              <a href="#"></a>Informativa sulla privacy
+            </li>
+            <li class="sidebar-options"><a href="#">Impostazioni cookie</a></li>
+            <li class="sidebar-options"><a href="#">Info annunci</a></li>
+            <li class="sidebar-options"><a href="#">Accessibilità</a></li>
+            <li class="sidebar-options">
+              <a href="#">Politica sui cookie</a>
+            </li>
+          </ul>
+          <div id="side-globe" class="flex fl-row align-center">
             <div class="svg-container">
-              <img src="img/profile.svg" alt="profile" />
+              <i class="fa-solid fa-globe"></i>
             </div>
-            <div class="mobile-hidden">&nbsp;John Doe</div>
+            <div class="mobile-hidden">&nbsp;italiano</div>
           </div>
         </div>
       </div>
@@ -146,7 +158,7 @@
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/metal_lifting.jpg" alt="metal" />
+                <img src="../img/metal_lifting.jpg" alt="metal" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">Heavy Metal</h4>
@@ -155,13 +167,13 @@
             </div>
             <!-- 2 -->
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/stranger.jpeg" alt="stranger" />
+                <img src="../img/stranger.jpeg" alt="stranger" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">
@@ -172,13 +184,13 @@
             </div>
             <!-- 3 -->
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/aquietplace.jpeg" alt="quiet place" />
+                <img src="../img/aquietplace.jpeg" alt="quiet place" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">A quiet place</h4>
@@ -193,7 +205,7 @@
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/split.jpeg" alt="split" />
+                <img src="../img/split.jpeg" alt="split" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">Split</h4>
@@ -202,13 +214,13 @@
             </div>
             <!-- 5 -->
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/cure.jpeg" alt="cure" />
+                <img src="../img/cure.jpeg" alt="cure" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">A cure for wellnes</h4>
@@ -217,13 +229,13 @@
             </div>
             <!-- 6 -->
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/sinister.jpeg" alt="sinister" />
+                <img src="../img/sinister.jpeg" alt="sinister" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">Sinister</h4>
@@ -248,7 +260,7 @@
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/radar.jpeg" alt="radar" />
+                <img src="../img/radar.jpeg" alt="radar" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">Release Radar</h4>
@@ -262,7 +274,7 @@
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
-                <img src="img/mixdaily.jpeg" alt="mix" />
+                <img src="../img/mixdaily.jpeg" alt="mix" />
               </div>
               <div class="album-description txt-centered">
                 <h4 class="album-title">Daily Mix 1</h4>
@@ -278,14 +290,14 @@
           </div>
           <div class="main-section-content flex fl-row justify-start">
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay circle">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
                 <div class="circle">
-                  <img src="img/youg.jpeg" alt="youg" />
+                  <img src="../img/youg.jpeg" alt="youg" />
                 </div>
               </div>
               <div class="album-description txt-centered">
@@ -294,14 +306,14 @@
             </div>
             <!-- 2c -->
             <div class="album">
-              <div class="img-container relative">
+              <div class="../img-container relative">
                 <div class="album-overlay circle">
                   <div class="album-overlay-content">
                     <i class="fa-regular fa-circle-play"></i>
                   </div>
                 </div>
                 <div class="circle">
-                  <img src="img/einaudi.jpeg" alt="einaudi" />
+                  <img src="../img/einaudi.jpeg" alt="einaudi" />
                 </div>
               </div>
               <div class="album-description txt-centered">
@@ -318,7 +330,7 @@
     >
       <div id="play-album" class="flex flex-row justify-start align-center">
         <div id="playing-img" class="img-container">
-          <img src="img/sinister.jpeg" alt="sinister" />
+          <img src="../img/sinister.jpeg" alt="sinister" />
         </div>
         <div id="playing-description">
           <div id="playing-title" class="play-mar">Sinister</div>
