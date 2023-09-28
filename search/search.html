@@ -19,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" id="topLogo" type="image/x" href="../img/logo-small.svg" />
     <title>Search</title>
   </head>
   <body>
@@ -47,9 +48,9 @@
           <div id="side-menu">
             <a
               href="../index.html"
-              class="side-choise flex fl-row align-center"
+              class="side-choise flex fl-row align-center bar-mar"
             >
-              <div class="svg-container bar-mar">
+              <div class="svg-container">
                 <img src="../img/home.svg" alt="home" />
               </div>
               <div class="side-choise-wrapper mobile-hidden">Home</div>
@@ -59,7 +60,12 @@
               <div class="svg-container">
                 <img src="../img/search.svg" alt="search" />
               </div>
-              <div class="side-choise-wrapper mobile-hidden">Cerca</div>
+              <div
+                class="side-choise-wrapper mobile-hidden"
+                style="color: white"
+              >
+                Cerca
+              </div>
             </div>
             <div class="side-choise flex fl-row align-center bar-mar">
               <div class="svg-container">
@@ -87,11 +93,8 @@
         <div class="side-section bar-mar">
           <ul id="side-installer" class="flex fl-row mobile-hidden txt-wrap">
             <li class="sidebar-options"><a href="#"></a>Informazioni legali</li>
-            <li class="sidebar-options">
-              <a href="#"></a>Centro sulla privacy
-            </li>
-            <li class="sidebar-options">
-              <a href="#"></a>Informativa sulla privacy
+            <li class="sidebar-options">            
+              <a href="#">Centro Informativa sulla privacy</a>
             </li>
             <li class="sidebar-options"><a href="#">Impostazioni cookie</a></li>
             <li class="sidebar-options"><a href="#">Info annunci</a></li>
@@ -109,217 +112,575 @@
         </div>
       </div>
       <div id="right-content" class="">
-        <div id="main-nav" class="flex fl-row justify-center no-wrap">
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">IN EVIDENZA</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">PODCAST</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">CLASSIFICHE</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">GENERI E MOOD</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">NUOVE USCITE</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-          <div
-            class="main-nav-choise flex fl-column justify-start align-center"
-          >
-            <a href="#" class="txt-wrap">SCOPRI</a>
-            <div class="nav-choise-highlight"></div>
-          </div>
-        </div>
         <div class="main-section">
-          <div class="main-section-title">Recently Played</div>
+          <div class="main-section-title">Sfoglia tutto</div>
+
           <div class="main-section-content flex fl-row justify-start">
-            <div class="album">
-              <!-- 1 -->
-              <div class="img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
                 </div>
-                <img src="../img/metal_lifting.jpg" alt="metal" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Heavy Metal</h4>
-                <div class="album-author">Subtitle</div>
               </div>
             </div>
             <!-- 2 -->
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
                 </div>
-                <img src="../img/stranger.jpeg" alt="stranger" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">
-                  Stranger Things Vol.1 (a Netflix Original Series Soundtrack)
-                </h4>
-                <div class="album-author">Kyle Dixon & Michael</div>
               </div>
             </div>
             <!-- 3 -->
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
                 </div>
-                <img src="../img/aquietplace.jpeg" alt="quiet place" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">A quiet place</h4>
-                <div class="album-author">Subtitle</div>
               </div>
             </div>
             <!-- 4 -->
-            <div class="album">
-              <div class="img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
                 </div>
-                <img src="../img/split.jpeg" alt="split" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Split</h4>
-                <div class="album-author">Subtitle</div>
               </div>
             </div>
-            <!-- 5 -->
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <img src="../img/cure.jpeg" alt="cure" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">A cure for wellnes</h4>
-                <div class="album-author">Subtitle</div>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <img src="../img/sinister.jpeg" alt="sinister" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Sinister</h4>
-                <div class="album-author">Subtitle</div>
-              </div>
-            </div>
-          </div>
 
-          <!-- second section -->
-          <div class="main-section-title">
-            Creato per John Doe
-            <div class="main-section-subtitle">
-              Più ascolti, più accurati saranno i suggerimenti.
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="outer-album">
+              <div class="album albm3">
+                <h2>Classifiche</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/ab67706f000000027ea4d505212b9de1f72c5112"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="outer-album">
+              <div class="album albm4">
+                <h2>Nuove uscite</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 1 -->
+            <div class="outer-album">
+              <div class="album albm1">
+                <h2>Podcast</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://i.scdn.co/image/567158eb895ad26718a814345af0fc43ee785ec5"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="outer-album">
+              <div class="album albm2">
+                <h2>Solo per te</h2>
+                <div class="rotated-img">
+                  <img
+                    src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe"
+                    alt=""
+                  />
+                </div>
+              </div>
             </div>
           </div>
-          <div class="main-section-content flex fl-row justify-start">
-            <!-- 1b -->
-            <div class="album">
-              <div class="img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <img src="../img/radar.jpeg" alt="radar" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Release Radar</h4>
-              </div>
-            </div>
-            <!-- 2b -->
-            <div class="album">
-              <div class="img-container relative">
-                <div class="album-overlay">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <img src="../img/mixdaily.jpeg" alt="mix" />
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Daily Mix 1</h4>
-              </div>
+          <div class="main-faq flex fl-row justify-between bar-mar">
+            <ul class="faq-outer flex fl-row justify-between">
+              <li class="faq-options">
+                <h4 class="faq-title">Azienda</h4>
+                <ul class="faq-inner">
+                  <li class="faq-inner-list"><a href="#">Chi siamo</a></li>
+                  <li class="faq-inner-list">
+                    <a href="#">Opportunità di lavoro</a>
+                  </li>
+                  <li class="faq-inner-list"><a href="#">For the Record</a></li>
+                </ul>
+              </li>
+              <li class="faq-options">
+                <h4 class="faq-title">Community</h4>
+                <ul class="faq-inner">
+                  <li class="faq-inner-list"><a href="#">Per artisti</a></li>
+                  <li class="faq-inner-list"><a href="#">Sviluppatori</a></li>
+                  <li class="faq-inner-list"><a href="#">Pubblicità</a></li>
+                  <li class="faq-inner-list"><a href="#">Investitori</a></li>
+                  <li class="faq-inner-list"><a href="#">Venditori</a></li>
+                </ul>
+              </li>
+              <li class="faq-options">
+                <h4 class="faq-title">Link-utili</h4>
+                <ul class="faq-inner">
+                  <li class="faq-inner-list"><a href="#">Assistenza</a></li>
+                  <li class="faq-inner-list">
+                    <a href="#">App gratuita per cellulari</a>
+                  </li>
+                  <li class="faq-inner-list">
+                    <a href="#">Diritti del consumatore</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="faq-socials flex fl-row justify-center">
+              <a href="#" class="social-container">
+                <i class="fa-brands fa-instagram" style="color: white"></i>
+              </a>
+              <a href="#" class="social-container">
+                <i class="fa-brands fa-twitter" style="color: white"></i>
+              </a>
+              <a href="#" class="social-container">
+                <i class="fa-brands fa-facebook" style="color: white"></i>
+              </a>
             </div>
           </div>
-          <!-- third section -->
-          <div class="main-section-title">
-            Artisti più popolari
-            <div class="main-section-subtitle">
-              Più ascolti, più accurati saranno i suggerimenti.
-            </div>
-          </div>
-          <div class="main-section-content flex fl-row justify-start">
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay circle">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <div class="circle">
-                  <img src="../img/youg.jpeg" alt="youg" />
-                </div>
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Lana del Rey</h4>
-              </div>
-            </div>
-            <!-- 2c -->
-            <div class="album">
-              <div class="../img-container relative">
-                <div class="album-overlay circle">
-                  <div class="album-overlay-content">
-                    <i class="fa-regular fa-circle-play"></i>
-                  </div>
-                </div>
-                <div class="circle">
-                  <img src="../img/einaudi.jpeg" alt="einaudi" />
-                </div>
-              </div>
-              <div class="album-description txt-centered">
-                <h4 class="album-title">Ludovico Einaudi</h4>
-              </div>
-            </div>
+          <!-- info -->
+          <div class="main-info flex fl-row justify-between align-center">
+            <ul class="info flex fl-row align-center justify-between">
+              <li class="info-options"><a href="">Informazioni legali</a></li>
+              <li class="info-options">
+                <a href="">Centro sulla Informativa sulla privacy</a>
+              </li>
+              <li class="info-options"><a href="">Impostazioni cookie</a></li>
+              <li class="info-options"><a href="">Info annunci</a></li>
+              <li class="info-options"><a href="">Accessibilità</a></li>
+            </ul>
+            <div id="version">&copy; 2023 Spotify AB</divh4>
           </div>
         </div>
       </div>
@@ -329,18 +690,18 @@
       class="fixed bar-index flex fl-row justify-between no-wrap align-center"
     >
       <div id="play-album" class="flex flex-row justify-start align-center">
-        <div id="playing-img" class="img-container">
+        <div id="playing-img" class="img-container hidden">
           <img src="../img/sinister.jpeg" alt="sinister" />
         </div>
-        <div id="playing-description">
-          <div id="playing-title" class="play-mar">Sinister</div>
-          <a href="#" id="playing-author" class="play-mar">Brano nome</a>
+        <div id="playing-description hidden">
+          <div id="playing-title" class="play-mar hidden">Sinister</div>
+          <a href="#" id="playing-author" class="play-mar hidden">Brano nome</a>
         </div>
-        <div id="playing-svg" class="flex">
-          <div class="svg-container">
+        <div id="playing-svg" class="flex hidden">
+          <div class="svg-container hidden">
             <i class="fa-regular fa-heart"></i>
           </div>
-          <div class="svg-container">
+          <div class="svg-container hidden">
             <i class="fa-regular fa-folder"></i>
           </div>
         </div>

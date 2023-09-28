@@ -18,6 +18,7 @@
     --side-width: 250px;
 }
 
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -106,6 +107,11 @@ a {
 
 .btn{
     color: var(--color-white);
+}
+
+link{
+    fill: var(--color-highlight);
+    color: var(--color-highlight);
 }
 
 #upgrade-button:hover{
@@ -575,7 +581,11 @@ i{
 
 
 
-
+@media screen and (max-height: 400px) {
+    #topbar{
+        display: none;
+    }
+}
 
 @media screen and (max-width: 1100px){
     #main-nav{
